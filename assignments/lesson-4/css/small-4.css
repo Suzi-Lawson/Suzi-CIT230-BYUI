@@ -1,0 +1,39 @@
+body {
+	background-color: #0282e4;
+}
+
+header {
+	margin: 10px auto;
+	background-color: #0282e4;
+	border: 1px solid #bbb;
+	box-shadow: 0 0 30px #777;
+	text-align: center;
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+    margin: 10px;
+}
+nav {
+    font-family: 'Stylish', helvetica, sans-serif;
+    background-color: #863e34;
+    color:#fff;
+}
+h1, h2, h3, h4 {
+    font-family: 'Carter One', cursive, sans-serif;
+    color: #fff;
+}
+.motto {
+    font-family: 'Stylish', helvetica, sans-serif;
+    color: #fff;
+}
+p {
+    font-family: 'Stylish', helvetica, sans-serif;
+    color: #fff;
+}
+#icon {
+    width: 120px;
+    border-style: solid;
+    border-color: #4a5405;
+}
