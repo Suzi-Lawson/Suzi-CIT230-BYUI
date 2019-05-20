@@ -21,7 +21,9 @@ nav {
     color:#fff;
     list-style-type: none;
 }
-h2 {text-align:center;}
+h2 {
+    text-align:center;
+}
 h1, h2, h3, h4 {
     font-family: 'Carter One', cursive, sans-serif;
     color: #fff;
