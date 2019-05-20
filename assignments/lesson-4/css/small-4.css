@@ -19,9 +19,9 @@ nav {
     font-family: 'Stylish', helvetica, sans-serif;
     background-color: #863e34;
     color:#fff;
-nav ul { list-style-type: none;
+    list-style-type: none;
 }
-}
+h2 {text-align:center;}
 h1, h2, h3, h4 {
     font-family: 'Carter One', cursive, sans-serif;
     color: #fff;
