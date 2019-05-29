@@ -1,7 +1,7 @@
-@media only screen and (max-width: 45em) {
 
 body {
-	background-color: #0282e4;
+    background-color: #0282e4;
+    align-content: center;
 }
 
 header {
@@ -24,6 +24,19 @@ nav {
 }
 ul  {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+li a {
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #4a5405;
+    color: #bbb;
 }
 h2 {
     text-align:center;
@@ -45,11 +58,35 @@ p {
     border-style: solid;
     border-color: #4a5405;
 }
-#preston {
+.active {
     background-color: #611914;
+    color: #fff;
 }
 .forcast {
     display: none;
 }
 
+#artimg {
+    max-width: 340px;
 }
+
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+    width: 960px;
+    height: 300px;
+}
+.hero {
+    margin: 10px auto;
+    width: 98%;
+    height: 250px;
+}
+.stats {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background: #863e34; 
+    opacity: 0.8;
+    border: 2px solid #4a5405;
+    padding: .5rem;
+}  
