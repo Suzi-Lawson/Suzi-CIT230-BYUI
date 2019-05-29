@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>How's The Weather? - Preston</title>
+    <meta name="author" content="Suzi Lawson | CIT 230 BYU-Idaho">
     <meta name="description" content="Preston city weather page for Weather assignment for Suzi Lawson in CIT 230: Web Front-end Development at Brigham Young University-Idaho ">
-    <link rel="stylesheet" href="css/small-4.css">
-    <link href="https://fonts.googleapis.com/css?family=Carter+One|Stylish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One%7CStylish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-5.css">
+    <link rel="stylesheet" href="css/large-5.css">
 </head>
 <body>
     <header>
@@ -15,33 +18,56 @@
             <h1>How's The Weather?</h1>
             <div class="motto">When answers are needed</div>
         </section>
-        <nav>
-            <ul id="menu">
-                <li><a href="">Home</a></li>
-                <li id="preston"><a href="preston-4.html">Preston</a></li>
-                <li><a href="">Soda Springs</a></li>
-                <li><a href="">Fish Haven</a></li>
-                <li><a href="">Storm Center</a></li>
-                <li><a href="">Gallery</a></li>
-            </ul>
-        </nav>
     </header>
+    <nav>
+        <ul id="menu">
+            <li><a href="">Home</a></li>
+            <li id="preston"><a href="preston-5.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="">Storm Center</a></li>
+            <li><a href="">Gallery</a></li>
+        </ul>
+    </nav>
     <main>
-        <h2>Preston</h2>
-            <img>hero image</img>
-            <h3>Weather Summary</h3>
-                <p>information for summary</p>
+        <h2>Preston City</h2>
+        <section class="hero">
+            <p>hero image</p>
+        </section>
+        <section class="forecast">
+            <h3>5 Day Forcast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th><span id="dayone">Wed</span></th>
+                        <th><span id="daytwo">Thur</span></th>
+                        <th><span id="daythree">Fri</span></th>
+                        <th><span id="dayfour">Sat</span></th>
+                        <th><span id="dayfive">Sun</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/sunny.png" id="weather_iconone" alt="Weather Icon"><br><span id="dayonetemp"></span>High 89&deg;F</td>
+                        <td><img src="images/sunny.png" id="weather_icontwo" alt="Weather Icon"><br><span id="daytwotemp"></span>87&deg;F</td>
+                        <td><img src="images/sunny.png" id="weather_iconthree" alt="Weather Icon"><br><span id="daythreetemp"></span>78&deg;F</td>
+                        <td><img src="images/sunny.png" id="weather_iconfour" alt="Weather Icon"><br><span id="dayfourtemp"></span>75&deg;F</td>
+                        <td><img src="images/sunny.png" id="weather_iconfive" alt="Weather Icon"><br><span id="dayfivetemp"></span>72&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
         <article>
             <h3>Article Title</h3>
                 <h4>by author</h4>
             <p>actual article</p>
-            <img>article image</img>
+            <p>article image placeholder</p>
         </article>
         
         <div>
 
             <p>contact Information</p>
-        <img id="map">placeholder will fix later</img>
+        <p id="map">map placeholder</p>
         </div>
     </main>
     <footer>

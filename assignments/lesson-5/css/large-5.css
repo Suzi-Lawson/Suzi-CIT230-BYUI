@@ -1,5 +1,5 @@
-@media only screen and (max-width: 45em) {
 
+@media only screen and (min-width: 45em) {
 body {
 	background-color: #0282e4;
 }
@@ -47,9 +47,6 @@ p {
 }
 #preston {
     background-color: #611914;
-}
-.forcast {
-    display: none;
 }
 
 }
