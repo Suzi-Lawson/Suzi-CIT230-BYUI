@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How's The Weather? - Preston</title>
+    <meta name="author" content="Suzi Lawson | CIT 230 BYU-Idaho">
+    <meta name="description" content="Preston city weather page for Weather assignment for Suzi Lawson in CIT 230: Web Front-end Development at Brigham Young University-Idaho ">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One%7CStylish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-6.css">
+    <link rel="stylesheet" href="css/large-6.css">
+    <script src="scripts/hamburger.js"></script>
+</head>
+<body>
+    <header>
+        <img id="icon" src="images/weathericon.png" alt="weather icon">
+        <section class="headings">
+            <h1>How's The Weather?</h1>
+            <div class="motto">When answers are needed</div>
+        </section>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="">Home</a></li>
+            <li class="active"><a href="preston-6.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="">Storm Center</a></li>
+            <li><a href="">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="herodiv">
+            <img class="hero" src="images/widescreen.jpg" alt="mountains by cave of the winds">
+            <section class="stats">
+                <h3>Weather Summery</h3>
+                <p>Currently: Sunny</p>
+                <p>High: 76 &deg;F</p>
+                <p>Wind Chill: 78 &deg;F</p> 
+                <p>Huminity: 69%</p>
+                <p>Wind Speed: 5 mph</p>
+            </section>
+        </div>
+        <section class="forcast">
+            <h3>5 Day Forcast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th><span id="dayone">Wed</span></th>
+                        <th><span id="daytwo">Thur</span></th>
+                        <th><span id="daythree">Fri</span></th>
+                        <th><span id="dayfour">Sat</span></th>
+                        <th><span id="dayfive">Sun</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/sunny.png" id="weather_iconone" alt="Weather Icon"><br><span id="dayonetemp"></span>89&deg;F</td>
+                        <td><img src="images/sunny.png" id="weather_icontwo" alt="Weather Icon"><br><span id="daytwotemp"></span>87&deg;F</td>
+                        <td><img src="images/sunny.png" id="weather_iconthree" alt="Weather Icon"><br><span id="daythreetemp"></span>78&deg;F</td>
+                        <td><img src="images/sunny.png" id="weather_iconfour" alt="Weather Icon"><br><span id="dayfourtemp"></span>75&deg;F</td>
+                        <td><img src="images/sunny.png" id="weather_iconfive" alt="Weather Icon"><br><span id="dayfivetemp"></span>72&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <article>
+            <img id="artimg" src="images/articleimage.jpg" alt="random picture of snow dragon as space filler">
+            <h3>The Art of Relaxing</h3>
+                <h4>by Suzi Lawson</h4>
+            <p>Everybody loves to relax. There are many ways to relax in the town of Preston. In the winter there is cross country skiing and snow mobiling.
+                In the Spring there is golfing, fishing, boating, water-skiing and so much more. However, the best part of Preston is the Maple Grove Hot Springs. 
+                There is nothing like relaxing in the natural therapy pools and enjoying food from the patron kitchen. You can even bring home something 
+                to remember it by from the gift shop.
+            </p>
+        </article>
+        
+        <div>
+
+            <p>contact Information</p>
+        <p id="map">map placeholder</p>
+        </div>
+    </main>
+    <footer>
+        <p> © 2019 - Suzi Lawson - Location: Colorado - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+    </footer>
+</body>
+</html>
