@@ -1,20 +1,47 @@
 @media only screen and (min-width: 600px) {
-.forcast {
-    display: inline;
-}
 
 /* navigation */
-
 nav button {display: none;}
 
 nav ul.hide {display: block;}
 
-li {
+nav ul li {
     display: inline-block;
 }
 
+/* hero */
+section.hero {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* 5 day forecast */
+section.forcast {
+    display: block;
+    font-family: 'Stylish', helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+section.forcast table {
+ margin: auto auto 40px auto;
+}
+
+.forcast td, .forcast th {
+    border: 3x solid #ddd;
+    padding: .2rem;
+}
+
+.forcast th {
+    background-color: #4a5405;
+    color: #fff;
+    padding: 1.3%;
+    font-size: 1.2rem;
+}
+
+.forecast tbody {
+    font-size: 1.5em;
+}
 
 
-
-
+/* end of @media don't type past this */
 }

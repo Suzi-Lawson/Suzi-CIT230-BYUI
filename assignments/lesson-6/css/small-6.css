@@ -1,9 +1,46 @@
+/* general looks */
 body {
     background-color: #0282e4;
-    align-content: center;
+    max-width: 960px;
+    margin: 0 auto;    
 }
-/* header */
 
+h1, h2, h3, h4 {
+    font-family: 'Carter One', cursive, sans-serif;
+    color: #fff;
+}
+
+h2 {
+    text-align:center;
+}
+
+p {
+    font-family: 'Stylish', helvetica, sans-serif;
+    color: #fff;
+}
+/* heading */
+#icon {
+    width: 100px;
+    border-style: solid;
+    border-color: #4a5405;
+}
+
+header {
+	margin: 10px auto;
+	background-color: #0282e4;
+	text-align: center;
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+    margin: 10px;
+}
+
+.motto {
+    font-family: 'Stylish', helvetica, sans-serif;
+    color: #fff;
+}
 
 /* navigation */
 nav button {
@@ -18,13 +55,15 @@ nav {
     font-family: 'Stylish', helvetica, sans-serif;
     background-color: #863e34;
     color:#fff;
-    }
-
-nav ul  {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+nav ul  {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     }
 
 nav ul li a {
@@ -46,68 +85,18 @@ li a:hover {
 
 nav ul.hide {display: none;}
 
-/* body */
-
-body {
-    background-color: #0282e4;
-    align-content: center;
-}
-
-header {
-	margin: 10px auto;
-	background-color: #0282e4;
-	border: 1px solid #bbb;
-	box-shadow: 0 0 30px #777;
-	text-align: center;
-}
-
-header img, .headings {
-	display: inline-block;
-	vertical-align: middle;
-    margin: 10px;
-}
-
-
-h2 {
-    text-align:center;
-}
-h1, h2, h3, h4 {
-    font-family: 'Carter One', cursive, sans-serif;
-    color: #fff;
-}
-.motto {
-    font-family: 'Stylish', helvetica, sans-serif;
-    color: #fff;
-}
-p {
-    font-family: 'Stylish', helvetica, sans-serif;
-    color: #fff;
-}
-#icon {
-    width: 100px;
-    border-style: solid;
-    border-color: #4a5405;
-}
-
-.forcast {
-    display: none;
-}
-
-#artimg {
-    max-width: 340px;
-}
-
+/* hero image */
 .herodiv {
     margin: 10px auto;
     position: relative;
-    width: 960px;
-    height: 300px;
+    width: 98%;
 }
 .hero {
     margin: 10px auto;
-    width: 98%;
-    height: 250px;
+    width: 100%;
 }
+
+/* weather summary */
 .stats {
     position: absolute;
     top: 20px;
@@ -116,4 +105,45 @@ p {
     opacity: 0.8;
     border: 2px solid #4a5405;
     padding: .5rem;
+    text-align: center;
 }  
+.stats h3 {
+    text-decoration: underline;
+}
+
+/* 5 day forecast */
+.forcast {
+    display: none;
+}
+/* article section */
+#tempimg {
+    float: right;
+}
+
+.clearfix {
+    overflow: auto;
+  }
+
+/* footer */
+
+#map1 {
+    float: right;
+}
+
+/* mapping section */
+#contact {
+    align-content: center;
+}
+
+footer {
+    text-align: center
+}
+
+
+
+
+
+
+
+
+
