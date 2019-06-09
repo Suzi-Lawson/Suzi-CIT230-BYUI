@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How's The Weather? - Preston</title>
+    <meta name="author" content="Suzi Lawson | CIT 230 BYU-Idaho">
+    <meta name="description" content="Preston city weather page for Weather assignment for Suzi Lawson in CIT 230: Web Front-end Development at Brigham Young University-Idaho ">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One%7CStylish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-7.css">
+    <link rel="stylesheet" href="css/large-7.css">
+</head>
+<body>
+    <header>
+        <img id="icon" src="images/weathericon.png" alt="weather icon">
+        <section class="headings">
+            <h1>How's The Weather?</h1>
+            <div class="motto">When answers are needed</div>
+        </section>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="">Home</a></li>
+            <li class="active"><a href="preston-7.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="herodiv">
+            <img class="hero" src="images/large.jpg" alt="mountains by cave of the winds" srcset="images/small.jpg 600w, images/large.jpg 1200w">
+            <section class="stats">
+                <h3>Weather Summary</h3>
+                <p>Currently: Sunny</br>
+                High: 76 &deg;F</br>
+                Wind Chill: 78 &deg;F</br> 
+                Huminity: 69%</br>
+                Wind Speed: 5 mph</p>
+            </section>
+        </div>
+        <section class="forcast">
+            <h3>5 Day Forcast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th><span id="dayone">Wed</span></th>
+                        <th><span id="daytwo">Thur</span></th>
+                        <th><span id="daythree">Fri</span></th>
+                        <th><span id="dayfour">Sat</span></th>
+                        <th><span id="dayfive">Sun</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/sunny.png" id="weather_iconone" alt="Weather Icon"><br><span id="dayonetemp"></span>89&deg;F</td>
+                        <td><img src="images/sunny.png" id="weather_icontwo" alt="Weather Icon"><br><span id="daytwotemp"></span>87&deg;F</td>
+                        <td><img src="images/sunny.png" id="weather_iconthree" alt="Weather Icon"><br><span id="daythreetemp"></span>78&deg;F</td>
+                        <td><img src="images/sunny.png" id="weather_iconfour" alt="Weather Icon"><br><span id="dayfourtemp"></span>75&deg;F</td>
+                        <td><img src="images/sunny.png" id="weather_iconfive" alt="Weather Icon"><br><span id="dayfivetemp"></span>72&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <article>
+            <h3>The Art of Relaxing</h3>
+                <h4>by Suzi Lawson</h4>
+            <div class="clearfix">
+                <p class="town-article">
+                        <img id="tempimg" src="images/articleimage.jpg" alt="random picture of snow dragon as space filler">Everybody loves to relax. There are many ways to relax in the town of Preston. In the winter there is cross country skiing and snow mobiling.
+                In the Spring there is golfing, fishing, boating, water-skiing and so much more. However, the best part of Preston is the Maple Grove Hot Springs. 
+                There is nothing like relaxing in the natural therapy pools and enjoying food from the patron kitchen. You can even bring home something 
+                to remember it by from the gift shop.
+                </p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <aside>
+            <div id="contact" class="clearfix">
+                    <p><b>How's The Weather?</b></p>
+                    <p><i>Address:</i> 30 N 1st E <br>Preston, ID 83263</address>
+                    <p><i>Phone:</i> 999.999.9999</p>
+                    <p><i>Email:</i> howstheweather.com</p>        
+                    <iframe id="map1" width="325" height="280" frameborder="0" src="https://www.bing.com/maps/embed?h=280&w=325&cp=42.09657936692997~-111.87661525187188&lvl=12&typ=s&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no"></iframe>
+            </div>
+        </aside>    
+        <p> © 2019 - Suzi Lawson | How's The Weather? | <script src="scripts/currentdate.js"></script></p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+</body>
+</html>
