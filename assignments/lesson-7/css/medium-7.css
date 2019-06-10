@@ -2,13 +2,15 @@
 
     
     /* gallery */
+    .container {
+        margin: 1rem auto;
+        padding: 0
+    }
 
     #gsix {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: column;
-        align-content: center;
-    }
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        }
     
     /* end of @media don't type past this */
     }

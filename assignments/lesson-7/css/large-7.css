@@ -47,12 +47,19 @@
     
     /* gallery */
 
-    #gsix {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: column;  
-        align-content: center;
+    .container {
+        margin: 1rem auto;
+        padding: 0
     }
+
+    #gsix {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    }
+
     
+    /* hover effect */
+    .container:hover {box-shadow: 0 0 50px #333;}
+
     /* end of @media don't type past this */
     }

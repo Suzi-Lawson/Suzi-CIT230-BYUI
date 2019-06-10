@@ -14,7 +14,7 @@ h2 {
     text-align:center;
 }
 
-p {
+p, figcaption {
     font-family: 'Stylish', helvetica, sans-serif;
     color: #fff;
 }
@@ -154,56 +154,14 @@ footer {
     flex-direction: column;
     align-content: center;
 }
-
-#gOne {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    Padding: 10px;
-    text-align: center;
-    align-content: center;
+img { 
+    width: 250px; 
+    height: auto; 
+    margin: 0;
 }
-
-#gTwo {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    Padding: 10px;
-    text-align: center;
+figcaption {
+    font-size: smaller;
+    padding-left: 5px;
 }
-#gThree {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    Padding: 10px;
-    text-align: center;
-}
-#gFour {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    Padding: 10px;
-    text-align: center;
-}
-#gFive {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    Padding: 10px;
-    text-align: center;
-}
-#gSix {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    Padding: 10px;
-    text-align: center;
-}
-
-#gOne p {
-    margin-top: 0.5px;
-}
-
-
 
 
