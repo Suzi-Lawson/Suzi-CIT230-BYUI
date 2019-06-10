@@ -37,10 +37,10 @@
             <section class="stats">
                 <h3>Weather Summary</h3>
                 <p>Currently: Sunny</p>
-                <p>High: 76 &deg;F</p>
-                <p>Wind Chill: 78 &deg;F</p> 
+                <p>High: <span id="temp">76</span> &deg;F</p>
+                <p>Wind Chill: <span id="windchill">wind chill</span> &deg;F</p> 
                 <p>Huminity: 69%</p>
-                <p>Wind Speed: 5 mph</p>
+                <p>Wind Speed: <span id="windspeed">25</span> mph</p>
             </section>
         </div>
         <section class="forcast">
@@ -89,8 +89,10 @@
                     <iframe id="map1" width="325" height="280" frameborder="0" src="https://www.bing.com/maps/embed?h=280&w=325&cp=42.09657936692997~-111.87661525187188&lvl=12&typ=s&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no"></iframe>
             </div>
         </aside>    
-        <p> © 2019 - Suzi Lawson | How's The Weather? | <script src="scripts/currentdate.js"></script></p>
+        <p> © 2019 - Suzi Lawson | How's The Weather? | <span id="today">current date</span></p>
     </footer>
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
 </body>
 </html>

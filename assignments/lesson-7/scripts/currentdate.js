@@ -18,4 +18,4 @@ var mm = today.getMonthName(); //January is 0!
 var yyyy = today.getFullYear();
 
 today = ww+ ', ' +dd+' '+mm+' '+yyyy;
-document.write(today);
+document.getElementById('today').innerHTML = today;
