@@ -26,14 +26,18 @@ p {
 }
 
 header {
-	margin: 10px auto;
+	margin: 10px;
 	background-color: #0282e4;
-	text-align: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-header img, .headings {
-	display: inline-block;
-	vertical-align: middle;
+.headings {
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin: 10px;
 }
 
@@ -67,7 +71,9 @@ nav ul  {
     }
 
 nav ul li a {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-content: column;
     color: #fff;
     padding: 8px 16px;
     text-decoration: none;
@@ -144,11 +150,59 @@ footer {
 
 #gsix {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
+    align-content: center;
 }
 
+#gOne {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    Padding: 10px;
+    text-align: center;
+    align-content: center;
+}
 
+#gTwo {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    Padding: 10px;
+    text-align: center;
+}
+#gThree {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    Padding: 10px;
+    text-align: center;
+}
+#gFour {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    Padding: 10px;
+    text-align: center;
+}
+#gFive {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    Padding: 10px;
+    text-align: center;
+}
+#gSix {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    Padding: 10px;
+    text-align: center;
+}
+
+#gOne p {
+    margin-top: 0.5px;
+}
 
 
 

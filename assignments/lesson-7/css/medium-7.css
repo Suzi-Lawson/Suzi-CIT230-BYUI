@@ -3,6 +3,11 @@
     
     /* gallery */
 
+    #gsix {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: column;
+        align-content: center;
     
     
     /* end of @media don't type past this */

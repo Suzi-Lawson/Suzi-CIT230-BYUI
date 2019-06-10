@@ -3,11 +3,13 @@
     /* navigation */
     nav button {display: none;}
     
-    nav ul.hide {display: block;}
-    
-    nav ul li {
-        display: inline-block;
+    nav ul.hide {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
     }
+    
     
     /* hero */
     section.hero {
@@ -44,7 +46,11 @@
     
     /* gallery */
 
-    
-    
+    #gsix {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: column;  
+        align-content: center;
+
     /* end of @media don't type past this */
     }
