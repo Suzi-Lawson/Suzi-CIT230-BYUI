@@ -151,6 +151,7 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
+    justify-content: center;
 }
 
 /* gallery page */
