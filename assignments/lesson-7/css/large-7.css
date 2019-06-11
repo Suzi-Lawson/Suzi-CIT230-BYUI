@@ -44,7 +44,14 @@
     .forecast tbody {
         font-size: 1.5em;
     }
-    
+
+    /* footer */
+
+    #contact {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        }
+        
     /* gallery */
 
     .container {

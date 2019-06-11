@@ -116,12 +116,22 @@ nav ul.hide {display: none;}
 .stats h3 {
     text-decoration: underline;
 }
+.stats p {
+    padding: .05rem;
+    margin: 0;
+}
 
 /* 5 day forecast */
 .forcast {
     display: none;
 }
+
 /* article section */
+article {
+    margin: 10px;
+    padding: 10px;
+}
+
 #tempimg {
     float: right;
 }
@@ -132,19 +142,15 @@ nav ul.hide {display: none;}
 
 /* footer */
 
-#map1 {
-    float: right;
-}
-
-/* mapping section */
-#contact {
-    align-content: center;
-}
-
 footer {
     text-align: center
 }
-
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
 
 /* gallery page */
 
