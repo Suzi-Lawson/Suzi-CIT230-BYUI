@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How's The Weather? - Preston</title>
+    <meta name="author" content="Suzi Lawson | CIT 230 BYU-Idaho">
+    <meta name="description" content="Preston city weather page for Weather assignment for Suzi Lawson in CIT 230: Web Front-end Development at Brigham Young University-Idaho ">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One%7CStylish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-9.css">
+    <link rel="stylesheet" href="css/medium-9.css">
+    <link rel="stylesheet" href="css/large-9.css">
+</head>
+<body>
+    <header>
+        <img id="icon" src="images/weathericon.png" alt="weather icon">
+        <section class="headings">
+            <h1>How's The Weather?</h1>
+            <div class="motto">When answers are needed</div>
+        </section>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-9.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Gallery</h2>
+        <div class="herodiv">
+            <img class="hero" src="images/large.jpg" alt="mountains by cave of the winds" srcset="images/small.jpg 600w, images/large.jpg 1200w">
+        <div id="gsix">
+            <div class="container">
+                <img src="images/sunnystock.jpg">
+                <figcaption>filler, will replace <a href="https://www.freeimages.com/photo/sunny-hillside-1407934">freeimages.com</a></figcaption>
+            </div>
+            <div class="container">
+                <img src="images/stormystock.jpg">
+                <figcaption>filler, will replace <a href="https://www.freeimages.com/photo/storm-1057945">freeimages.com</a></figcaption>
+            </div>
+            <div class="container">
+                <img src="images/snowiestock.jpg">
+                <figcaption>filler, will replace <a href="https://www.freeimages.com/photo/snowie-5-1383361">freeimages.com</a></figcaption>
+            </div>
+            <div class="container">
+                <img src="images/tornadostock.jpg">
+                <figcaption>filler, will replace <a href="https://www.freeimages.com/photo/tornado-1375487">freeimages.com</a></figcaption>
+            </div>
+            <div class="container">
+                <img src="images/rainbowstock.jpg">
+                <figcaption>filler, will replace <a href="https://www.freeimages.com/photo/rainbow-1369910">freeimages.com</a></figcaption>
+            </div>
+            <div class="container">
+                <img src="images/lightningstock.jpg">
+                <figcaption>filler, will replace <a href="https://www.freeimages.com/photo/crack-1408232">freeimages.com</a></figcaption>
+            </div>
+        </div>    
+    </main>
+    <footer>
+        <aside>
+            <div id="contact2">
+                    <p><b>How's The Weather?</b></p>
+                    <p><i>Address:</i> 30 N 1st E <br>Preston, ID 83263</address>
+                    <p><i>Phone:</i> 999.999.9999</p>
+                    <p><i>Email:</i> howstheweather.com</p>        
+            </div>
+        </aside>    
+        <p> © 2019 - Suzi Lawson | How's The Weather? | <span id="today">current date</span></p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+</html>
