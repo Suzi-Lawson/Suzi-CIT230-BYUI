@@ -56,7 +56,7 @@
 <!-- zip code using input of type number and is required -->
             <p>
                 <label for="zcode">Zip Code:</label>
-                <input type="number" class="weform" id="zcode" name="zipcode" pattern="[0-9]{5}" required>
+                <input type="number" class="weform" id="zcode" name="zipcode" required>
             </p>
 <!-- storm date using input of type date -->
             <p>
@@ -77,12 +77,12 @@
             </p>
 <!-- storm severity using type range (1 to 10) with a corresponding label that indicates the current range value from 1 to 10. -->
 <!-- Hint: See the Pen HTML Form example objects -->
-<p>
-        <label for="ssever">Storm Severity: (1 to 10)</label>
-        <input type="range" class="weform" id="ssever" value="5" min="1" max="10" name="stormseverity"
-        step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-		<span id="ratingvalue">5</span><br>
-    </p>
+            <p>
+                <label for="ssever">Storm Severity: (1 to 10)</label>
+                <input type="range" class="weform" id="ssever" value="5" min="1" max="10" name="stormseverity"
+                step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		        <span id="ratingvalue">5</span><br>
+            </p>
 <!-- storm region using select with drop-down options of "Preston", "Sugar City", and "Fish Haven". -->
 <!-- Add a first option with the text "Select Region ..." that is shown by default but not selectable (disabled). -->
 <!-- The rest of the options should have relevant value attributes. -->
@@ -97,8 +97,8 @@
             </p>
 <!-- user in-danger level using input of type radio with options and values of "yes," "maybe," and "no." -->
             <p>
-                <label for="indan">In Danger:</label></br>
-                <input type="radio" class="weform" id="idan" name="in-danger" value="yes">Yes<br>
+                <label for="indan">In Danger:</label><br>
+                <input type="radio" class="weform" id="indan" name="in-danger" value="yes">Yes<br>
                 <input type="radio" class="weform" name="in-danger" value="maybe">Maybe<br>
                 <input type="radio" class="weform" name="in-danger" value="no">No<br>
             </p>
