@@ -175,3 +175,22 @@ figcaption {
 #contact2 {
     align-content: center;
 }
+
+
+/* Storm Center Page */
+
+#flook {
+    padding: 15px;
+    margin: 15px;
+    padding-left: 30px;
+}
+
+/* thank you page */
+
+#thanksp {
+    border: solid;
+    border-color: #4a5405;
+    text-align: center;
+    background-color: #0282e4;
+    margin: 15px;
+}
