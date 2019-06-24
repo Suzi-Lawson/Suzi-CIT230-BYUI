@@ -175,3 +175,10 @@ figcaption {
 #contact2 {
     align-content: center;
 }
+
+/* Storm Center Page */
+
+#flook {
+    border-style: solid;
+    border-color: #4a5405;
+}
