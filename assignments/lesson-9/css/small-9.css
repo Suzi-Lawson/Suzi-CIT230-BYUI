@@ -176,9 +176,25 @@ figcaption {
     align-content: center;
 }
 
+
 /* Storm Center Page */
 
 #flook {
-    border-style: solid;
+    padding: 15px;
+    margin: 15px;
+    padding-left: 30px;
+}
+
+#freq {
+    text-align: center;
+}
+
+/* thank you page */
+
+#thanksp {
+    border: solid;
     border-color: #4a5405;
+    text-align: center;
+    background-color: #0282e4;
+    margin: 15px;
 }

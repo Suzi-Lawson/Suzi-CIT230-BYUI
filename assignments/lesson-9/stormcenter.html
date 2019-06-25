@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How's The Weather? - Preston</title>
+    <meta name="author" content="Suzi Lawson | CIT 230 BYU-Idaho">
+    <meta name="description" content="Preston city weather page for Weather assignment for Suzi Lawson in CIT 230: Web Front-end Development at Brigham Young University-Idaho ">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One%7CStylish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-9.css">
+    <link rel="stylesheet" href="css/large-9.css">
+</head>
+<body>
+    <header>
+        <img id="icon" src="images/weathericon.png" alt="weather icon">
+        <section class="headings">
+            <h1>How's The Weather?</h1>
+            <div class="motto">When answers are needed</div>
+        </section>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-9.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Storm Center</h2>
+        <div class="herodiv">
+            <img class="hero" src="images/small.jpg" sizes="100vw" srcset="images/small.jpg 600w, images/large.jpg 1200w" alt="mountains and cloudy sky">
+        </div>
+        <P id="freq">Please fill out the form bellow to report any dangerous weather conditions within the cities of Preston, Soda Springs, or Fish Haven.</P>
+        <form action="thanks.html" id="flook">
+            
+<!-- full name using input of type text and is required and only accepts alpha characters with a minimum of five characters using a regular expression pattern -->
+            <p>
+                <label for="name">Full Name:</label>
+                <input type="text" class="weform" id="name" name="fullname" pattern="[A-Z].[a-z].{5,}" required>
+            </p>
+<!-- email using input of type email and use a placeholder to provide a demo email -->
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" class="weform" id="email" name="email" placeholder="example@howstheweather.com">
+            </p>
+<!-- phone number using input of type tel and is required -->
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" class="weform" id="phone" name="phonenumber" pattern="[0-9]{10}" required>
+            </p>
+<!-- zip code using input of type number and is required -->
+            <p>
+                <label for="zcode">Zip Code:</label>
+                <input type="number" class="weform" id="zcode" name="zipcode" required>
+            </p>
+<!-- storm date using input of type date -->
+            <p>
+                <label for="sdate">Storm Date:</label>
+                <input type="date" class="weform" id="sdate" name="stormdate">
+            </p>
+<!-- storm type using input with a list attribute referencing a datalist of suggestions that include "Flash Flood," "Hail," "Hurricane," "Thunderstorm," and "Tornado." -->
+            <p>
+                <label for="stype">Storm Type:</label>
+                <input list="storms" type="text" class="weform" id="stype" name="stormtype">
+                <datalist id="storms">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">            
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+            </p>
+<!-- storm severity using type range (1 to 10) with a corresponding label that indicates the current range value from 1 to 10. -->
+<!-- Hint: See the Pen HTML Form example objects -->
+            <p>
+                <label for="ssever">Storm Severity: (1 to 10)</label>
+                <input type="range" class="weform" id="ssever" value="5" min="1" max="10" name="stormseverity"
+                step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		        <span id="ratingvalue">5</span><br>
+            </p>
+<!-- storm region using select with drop-down options of "Preston", "Sugar City", and "Fish Haven". -->
+<!-- Add a first option with the text "Select Region ..." that is shown by default but not selectable (disabled). -->
+<!-- The rest of the options should have relevant value attributes. -->
+            <p>
+                <label for="sreg">Storm Region:</label>
+                <select class="weform" id="sreg" name="stormreqion">
+                    <option selected value="selectregion" disabled>Select Region</option>
+                    <option value="preston">Preston</option>
+                    <option value="sugarcity">Sugar City</option>
+                    <option value="fishhaven">Fish Haven</option>
+                </select>
+            </p>
+<!-- user in-danger level using input of type radio with options and values of "yes," "maybe," and "no." -->
+            <p>
+                <label for="indan">In Danger:</label><br>
+                <input type="radio" class="weform" id="indan" name="in-danger" value="yes">Yes<br>
+                <input type="radio" class="weform" name="in-danger" value="maybe">Maybe<br>
+                <input type="radio" class="weform" name="in-danger" value="no">No<br>
+            </p>
+<!-- additional information or comments using a textarea -->
+            <p>
+                <label for="addcom">Additional information or comments:</label><br>
+                <textarea class="weform" id="addcom" name="addcom" maxlength="200" rows="5"></textarea>
+            </p>
+<!-- form submission button using input of type submit -->
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+<!-- Each field element should have an appropriate name attribute -->
+<!-- Ensure that the design meets standards such as eye tracking in a straight line and proper keyboard progression for accessibility. See Designing more Efficient Forms -->
+
+<!-- Your form design SHOULD NOT be exactly like the tutorial given on building a form. Incorporate your own design ideas and patterns. -->
+<!-- Create a new page labeled "thanks.html" that expresses gratitude for filling out the form. This page should load when the user has successfully submitted the form. -->
+        </form>
+    </main>
+    <footer>
+        <aside>
+            <div id="contact2">
+                    <div><p><b>How's The Weather?</b></p>
+                        <p><i>Address:</i> 30 N 1st E <br>Preston, ID 83263</p>
+                        <p><i>Phone:</i> 999.999.9999</p>
+                        <p><i>Email:</i> howstheweather.com</p>        
+                    </div>
+            </div>
+        </aside>    
+        <p> © 2019 - Suzi Lawson | How's The Weather? | <span id="today">current date</span></p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/ratingvalue.js"></script>
+</body>
+</html>
