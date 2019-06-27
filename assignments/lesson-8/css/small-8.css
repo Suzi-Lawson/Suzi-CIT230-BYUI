@@ -180,6 +180,9 @@ figcaption {
 /* Storm Center Page */
 
 #flook {
+    border: solid;
+    border-color: #4a5405;
+    background-color:#863e34;
     padding: 15px;
     margin: 15px;
     padding-left: 30px;
