@@ -1,0 +1,16 @@
+@media only screen and (min-width: 500px) {
+
+    
+    /* gallery */
+    .container {
+        margin: 1rem auto;
+        padding: 0
+    }
+
+    #gsix {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        }
+    
+    /* end of @media don't type past this */
+    }
