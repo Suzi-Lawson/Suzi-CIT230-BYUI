@@ -74,7 +74,7 @@ nav ul  {
 nav ul li a {
     display: flex;
     justify-content: center;
-    align-content: column;
+    flex-direction: column;
     color: #fff;
     padding: 8px 16px;
     text-decoration: none;
