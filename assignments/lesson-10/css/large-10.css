@@ -64,7 +64,7 @@
     }
 
     /* gallery */
-
+@media only screen and (min-width: 750px) {
     .container {
         margin: 1rem auto;
         padding: 0
@@ -78,6 +78,6 @@
     
     /* hover effect */
     .container:hover {box-shadow: 0 0 50px #333;}
-
+}
     /* end of @media don't type past this */
-    }
+}
