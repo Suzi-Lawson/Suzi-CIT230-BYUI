@@ -5,4 +5,5 @@ weatherObject.onload = function() {
     let weatherInfo = JSON.parse(weatherObject.responseText);
     console.log(weatherInfo);
 
+    document.getElementById('place').innerHTML = weatherInfo.name;
 } // end of onload
