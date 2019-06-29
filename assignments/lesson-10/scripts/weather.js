@@ -7,3 +7,4 @@ weatherObject.onload = function() {
 
     document.getElementById('temp').innerHTML = weatherInfo.main.temp;
     document.getElementById('windspeed').innerHTML = weatherInfo.wind.speed;
+}
