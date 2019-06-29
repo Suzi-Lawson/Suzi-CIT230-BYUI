@@ -9,14 +9,4 @@ weatherObject.onload = function() {
     document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
     document.getElementById('humidity').innerHTML = weatherInfo.main.humidity;
     document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed;
-
-
-const iconcode = weatherInfo.weather[0].icon;
-const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
-console.log(icon_path);
-document.getElementById('weather_iconOne').src = icon_path;
-document.getElementById('weather_iconTwo').src = icon_path;
-document.getElementById('weather_iconThree').src = icon_path;
-document.getElementById('weather_iconFour').src = icon_path;
-document.getElementById('weather_iconFive').src = icon_path;
 }
