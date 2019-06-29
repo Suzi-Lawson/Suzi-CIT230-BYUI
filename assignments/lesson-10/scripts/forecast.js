@@ -14,3 +14,5 @@ document.getElementById('weather_iconThree').src = icon_path;
 document.getElementById('weather_iconFour').src = icon_path;
 document.getElementById('weather_iconFive').src = icon_path;
 }
+
+<script src="scripts/forecast.js"></script>
