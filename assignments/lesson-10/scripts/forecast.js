@@ -5,7 +5,17 @@ weatherForcast.onload = function() {
     let forcastInfo = JSON.parse(weatherForcast.responseText);
     console.log(forcastInfo);
 
+var 
 
+    for (forcastInfo.list = 0; forcastInfo.list < 8; forcastInfo.list++) {
+        if (forcastInfo.list[0].dt_txt == "18:00:00")
+        document.getElementById('dayOnetemp').src = forcastInfo.list[0].main.temp;
+        const iconcode = forcastInfo.list[0].weather.0.icon;
+        const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
+        console.log(icon_path);
+        document.getElementById('weather_iconOne').src = icon_path;
+    }
+    
 
 }
 
