@@ -6,49 +6,7 @@ weatherForcast.onload = function() {
     console.log(forcastInfo);
 
 
-for (forcastInfo.list = 0; forcastInfo.list < 8; forcastInfo.list++) {
-    if (forcastInfo.list[0]dt_txt == "18:00:00")
-    document.getElementById('dayOnetemp').src = weather.main.temp;
-    const iconcode = forcastInfo.list[0].icon;
-    const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
-    console.log(icon_path);
-    document.getElementById('weather_iconOne').src = weather[0].icon;
-}
 
-for (forcastInfo.list = 8; forcastInfo.list < 16; forcastInfo.list++) {
-    if (forcastInfo.list[0]dt_txt == "18:00:00")
-    document.getElementById('dayTwotemp').src = weather.main.temp;
-    const iconcode = forcastInfo.list[0].icon;
-    const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
-    console.log(icon_path);
-    document.getElementById('weather_iconTwo').src = weather[0].icon;
-}
-for (forcastInfo.list = 16; forcastInfo.list < 24; forcastInfo.list++) {
-    if (forcastInfo.list[0]dt_txt == "18:00:00")
-
-    document.getElementById('dayThreetemp').src = weather.main.temp;
-
-    const iconcode = forcastInfo.list[0].icon;
-    const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
-    console.log(icon_path);
-    document.getElementById('weather_iconThree').src = weather[0].icon;
-}
-for (forcastInfo.list = 24; forcastInfo.list < 32; forcastInfo.list++) {
-    if (forcastInfo.list[0]dt_txt == "18:00:00")
-    document.getElementById('dayFourtemp').src = weather.main.temp;
-    const iconcode = forcastInfo.list[0].icon;
-    const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
-    console.log(icon_path);
-    document.getElementById('weather_iconFour').src = weather[0].icon;
-}
-for (forcastInfo.list = 32; forcastInfo.list < 40; forcastInfo.list++) {
-    if (forcastInfo.list[0]dt_txt == "18:00:00")
-    document.getElementById('dayFivetemp').src = weather.main.temp;
-    const iconcode = forcastInfo.list[0].icon;
-    const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
-    console.log(icon_path);
-    document.getElementById('weather_iconFive').src = weather[0].icon;
-}
 }
 
 
