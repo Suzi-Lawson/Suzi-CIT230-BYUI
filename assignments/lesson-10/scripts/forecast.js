@@ -6,7 +6,7 @@ weatherForcast.onload = function() {
     console.log(forcastInfo);
 
   for (var i = 0; i < 8; i++) {
-     if (forcastInfo.list[i].dt_txt == "18:00:00")
+     if (forcastInfo.list[i].dt_txt == '18:00:00')
         document.getElementById('dayOnetemp').innerHTML = forcastInfo.list[i].main.temp;
         
        const iconcode = forcastInfo.list[i].weather[0].icon;
