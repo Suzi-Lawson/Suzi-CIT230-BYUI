@@ -5,12 +5,13 @@ weatherForcast.onload = function() {
     let forcastInfo = JSON.parse(weatherForcast.responseText);
     console.log(forcastInfo);
 
-var 
+var i = forcastInfo.list[0];
 
-    for (forcastInfo.list = 0; forcastInfo.list < 8; forcastInfo.list++) {
-        if (forcastInfo.list[0].dt_txt == "18:00:00")
-        document.getElementById('dayOnetemp').src = forcastInfo.list[0].main.temp;
-        const iconcode = forcastInfo.list[0].weather.0.icon;
+    for (i = 0; i < 8; i++) {
+        if (forcastInfo.list[i].dt_txt == "18:00:00")
+        document.getElementById('dayOnetemp').src = forcastInfo.list[i].main.temp;
+        
+        const iconcode = forcastInfo.list[i].weather.icon;
         const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
         console.log(icon_path);
         document.getElementById('weather_iconOne').src = icon_path;
