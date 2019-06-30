@@ -8,6 +8,7 @@ weatherForcast.onload = function() {
   for (var i = 0; i < 8; i++) {
      if (forcastInfo.list[i].dt_txt == '18:00:00') {
         document.getElementById('dayOnetemp').innerHTML = forcastInfo.list[i].main.temp;
+        document.getElementById('dayOne').innerHTML = forcastInfo.list[i].dt;
      
        const iconcode = forcastInfo.list[i].weather[0].icon;
         const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
