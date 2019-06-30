@@ -3,6 +3,6 @@ weatherForcast.open("GET", "//api.openweathermap.org/data/2.5/forecast?zip=83263
 weatherForcast.send();
 weatherForcast.onload = function() {
     let forcastInfo = JSON.parse(weatherForcast.responseText);
-    
+    console.log(forcstInfo);
 
 }
