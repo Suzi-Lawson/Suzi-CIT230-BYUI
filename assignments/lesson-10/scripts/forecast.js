@@ -5,7 +5,7 @@ weatherForcast.onload = function() {
     let forcastInfo = JSON.parse(weatherForcast.responseText);
     console.log(forcastInfo);
 
-var i = forcastInfo.list[0];
+var i = forcastInfo.list;
 
     for (i = 0; i < 8; i++) {
         if (forcastInfo.list[i].dt_txt == "18:00:00")
