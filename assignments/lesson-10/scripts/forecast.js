@@ -7,10 +7,8 @@ weatherForcast.onload = function() {
 
 
 
-    for (var i = 0; i < 8; i++) {
-        const word = '18:00:00';
-        var con = forcastInfo.list[i].dt_txt.contain(word);
-        if (con == true) {
+    for (var i = 0; i < forcastInfo.list.legnth; i++) {
+        if (forcastInfo.list[i].dt_txt.match('18:00:00')) {
             document.getElementById('dayOnetemp').innerHTML = forcastInfo.list[i].main.temp;
             document.getElementById('dayOne').innerHTML = forcastInfo.list[i].dt;
      
