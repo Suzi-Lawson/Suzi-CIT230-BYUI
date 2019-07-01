@@ -13,19 +13,19 @@
     
     
     /* hero */
-    section.hero {
+    div.hero {
         max-width: 1000px;
         margin: auto;
     }
     
     /* 5 day forecast */
-    section.forcast {
+    div.forcast {
         display: block;
         font-family: 'Stylish', helvetica, sans-serif;
         padding: 10px;
         text-align: center;
     }
-    section.forcast table {
+    div.forcast table {
      margin: auto auto 40px auto;
     }
     
