@@ -30,7 +30,7 @@ weatherForcast.onload = function() {
     }
 
     for (var i = 16; i < 24; i++) {
-        if (forcastInfo.list[i].dt_txt == indextOf('18:00:00')) {
+        if (forcastInfo.list[i].dt_txt.indextOf('18:00:00')) {
             document.getElementById('dayThreetemp').innerHTML = forcastInfo.list[i].main.temp;
             document.getElementById('dayThree').innerHTML = forcastInfo.list[i].dt;
      
