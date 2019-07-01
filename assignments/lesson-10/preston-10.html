@@ -14,10 +14,10 @@
 <body>
     <header>
         <img id="icon" src="images/weathericon.png" alt="weather icon">
-        <section class="headings">
+        <div class="headings">
             <h1>How's The Weather?</h1>
             <div class="motto">When answers are needed</div>
-        </section>
+        </div>
     </header>
     <nav>
         <button onclick="toggleMenu()">&#9776; Menu</button>
@@ -34,16 +34,16 @@
         <h2>Preston Idaho</h2>
         <div class="herodiv">
                 <img class="hero" src="images/small.jpg" sizes="100vw" srcset="images/small.jpg 600w, images/large.jpg 1200w" alt="mountains and cloudy sky">
-            <section class="stats">
+            <div class="stats">
                 <h3>Weather Summary</h3>
                 <p>Currently: <span id="weatherDescr">Sunny</span></p>
                 <p>High: <span id="currentTemp">76</span> &deg;F</p>
                 <p>Wind Chill: <span id="windChill">windchill</span> &deg;F</p> 
                 <p>Humidity: <span id="humidity">69</span>%</p>
                 <p>Wind Speed: <span id="windSpeed">45</span> mph</p>
-            </section>
+            </div>
         </div>
-        <section class="forcast">
+        <div class="forcast">
             <h3>5 Day Forcast</h3>
             <table>
                 <thead>
@@ -65,7 +65,7 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </div>
         <article>
             <h3>The Art of Relaxing</h3>
                 <h4>by Suzi Lawson</h4>
@@ -78,8 +78,8 @@
                 </p>
             </div>
         </article>
-        <section>
-            
+        <section class="townevents">
+        
         </section>
     </main>
     <footer>
@@ -101,5 +101,6 @@
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/forecast.js"></script>
+    <script src="scripts/pevents.js"></script>
 </body>
 </html>
