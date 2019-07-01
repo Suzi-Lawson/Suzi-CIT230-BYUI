@@ -5,10 +5,12 @@ weatherForcast.onload = function() {
     let forcastInfo = JSON.parse(weatherForcast.responseText);
     console.log(forcastInfo);
 
-const word = '18:00:00';
+
 
     for (var i = 0; i < 8; i++) {
-        if (forcastInfo.list[i].dt_txt.contain(word)) {
+        const word = '18:00:00';
+        var con = forcastInfo.list[i].dt_txt.contain(word);
+        if (con == true) {
             document.getElementById('dayOnetemp').innerHTML = forcastInfo.list[i].main.temp;
             document.getElementById('dayOne').innerHTML = forcastInfo.list[i].dt;
      
