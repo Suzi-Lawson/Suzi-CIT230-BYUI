@@ -6,7 +6,7 @@ weatherForcast.onload = function() {
     console.log(forcastInfo);
 
     for (var i = 0; i < 8; i++) {
-        if (forcastInfo.list[i].dt_txt == ('18:00:00')) {
+        if (forcastInfo.list[i].dt_txt == '18:00:00') {
             document.getElementById('dayOnetemp').innerHTML = forcastInfo.list[i].main.temp;
             document.getElementById('dayOne').innerHTML = forcastInfo.list[i].dt;
      
@@ -18,7 +18,7 @@ weatherForcast.onload = function() {
     }
 
     for (var i = 8; i < 16; i++) {
-        if (forcastInfo.list[i].dt_txt === '18:00:00') {
+        if (forcastInfo.list[i].dt_txt == '18:00:00') {
             document.getElementById('dayTwotemp').innerHTML = forcastInfo.list[i].main.temp;
             document.getElementById('dayTwo').innerHTML = forcastInfo.list[i].dt;
      
@@ -30,7 +30,7 @@ weatherForcast.onload = function() {
     }
 
     for (var i = 16; i < 24; i++) {
-        if (forcastInfo.list[i].dt_txt == '18:00:00') {
+        if (forcastInfo.list[i].dt_txt == indextOf('18:00:00')) {
             document.getElementById('dayThreetemp').innerHTML = forcastInfo.list[i].main.temp;
             document.getElementById('dayThree').innerHTML = forcastInfo.list[i].dt;
      
