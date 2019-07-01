@@ -12,10 +12,11 @@ weatherForecast.onload = function() {
             document.getElementById('dayOnetemp').innerHTML = forecastInfo.list[i].main.temp;
             document.getElementById('dayOne').innerHTML = forecastInfo.list[i].dt;
      
-            const iconcode = forecastInfo.list[i].weather[0].icon;
-            const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
-            console.log(icon_path);
-            document.getElementById('weather_iconOne').innerHTML = icon_path; 
+        
+            let icon = "//openweathermap.org/img/w/" + forecastInfo.list[i].weather[0].icon + ".png";
+            let = desc = forecastInfo.list[i].weather[0].description;
+            document.getElementById('weather_iconOne').setAttribute('src', icon);
+            document.getElementById('weather_iconOne').setAttribute('atl', desc);  
         }
     }
 
