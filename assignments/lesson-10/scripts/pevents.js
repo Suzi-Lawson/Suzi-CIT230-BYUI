@@ -37,6 +37,7 @@ function populateTowns(jsonObj) {
     myImage.src = "images/presevents.jpg";
     myArticle.appendChild(myImage);
 
+
     let myPara = [];
     var event = 0
     
@@ -44,7 +45,7 @@ function populateTowns(jsonObj) {
     myPara[event + 1] = document.createElement('p');
     myPara[event + 1].textContent = town.events[event];
     myArticle.appendChild(myPara[event + 1]);
-    event++
+    event++;
 }
 
     myArticle.className = "townevents";
