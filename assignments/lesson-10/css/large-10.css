@@ -37,13 +37,18 @@
     .forcast th {
         background-color: #4a5405;
         color: #fff;
-        padding: 1.3%;
+        padding: 5px;
         font-size: 1.2rem;
     }
     
-    .forecast tbody {
-        font-size: 1.5em;
+    tbody {
+        font-size: 1.5rem;
         background-color: white;
+        padding: 20px 45px;
+    }
+
+    .forcast img {
+        width: 90px;
     }
 
     /* footer */
