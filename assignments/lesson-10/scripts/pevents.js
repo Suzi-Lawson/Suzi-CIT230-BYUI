@@ -41,9 +41,9 @@ function populateTowns(jsonObj) {
     let myPara = [];
     var event = 0
     
-    for (event in town.events) {
+    for (event in towns.events) {
     myPara[event + 1] = document.createElement('p');
-    myPara[event + 1].textContent = town.events[event];
+    myPara[event + 1].textContent = towns.events[event];
     myArticle.appendChild(myPara[event + 1]);
     event++;
 }
