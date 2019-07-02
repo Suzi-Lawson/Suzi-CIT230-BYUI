@@ -38,13 +38,14 @@ function populateTowns(jsonObj) {
     myArticle.appendChild(myImage);
 
     let myPara = [];
-    let event = 0
-town.events.forEach(x => {
-    myPara[event] = x;
-    document.createElement('p');
-    myPara[event].textContent = x;
-    myArticle.appendChild(myPara[event]);
-})
+    var event = 0
+    
+    for (event in town.events) {
+    myPara[event + 1] = document.createElement('p');
+    myPara[event + 1].textContent = town.events[event];
+    myArticle.appendChild(myPara[event + 1]);
+    event++
+}
 
     myArticle.className = "townevents";
     section.appendChild(myArticle);
