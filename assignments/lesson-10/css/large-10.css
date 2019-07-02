@@ -51,6 +51,23 @@
         width: 90px;
     }
 
+    .townevents {
+        width: 940px;
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-column-gap: 20px;
+        justify-items: center;
+        justify-content: space-evenly;
+    }
+
+    .townevents h3 {
+        grid-column: span 2;
+    }
+
+    .townevents img {
+        grid-row: span 10;
+    }
+
     /* footer */
 
     #contact {
