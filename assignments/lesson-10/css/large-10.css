@@ -68,11 +68,20 @@
         grid-row: span 10;
     }
 
+    
     /* footer */
 
     #contact {
         display: grid; 
         grid-template-columns: 1fr 1fr; 
+    }
+    
+
+    /* preston map*/
+
+    #map1 {
+        width: 325px; 
+        height: 285px; 
     }
         
     /* Home Page */

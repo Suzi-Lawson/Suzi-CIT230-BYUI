@@ -1,0 +1,114 @@
+@media only screen and (min-width: 600px) {
+
+    /* navigation */
+
+    nav button {display: none;}
+    
+    nav ul.hide {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    
+    /* hero */
+    div.hero {
+        max-width: 1000px;
+        margin: auto;
+    }
+    
+    /* 5 day forecast */
+    div.forcast {
+        display: block;
+        font-family: 'Stylish', helvetica, sans-serif;
+        padding: 10px;
+        text-align: center;
+    }
+    div.forcast table {
+     margin: auto auto 40px auto;
+    }
+    
+    .forcast td, .forcast th {
+        border: 3px solid #ddd;
+        padding: .2rem;
+    }
+    
+    .forcast th {
+        background-color: #4a5405;
+        color: #fff;
+        padding: 5px;
+        font-size: 1.2rem;
+    }
+    
+    tbody {
+        font-size: 1.5rem;
+        background-color: #0282e4;
+        padding: 20px 45px;
+    }
+
+    .forcast img {
+        width: 90px;
+    }
+
+    .townevents {
+        width: 940px;
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-column-gap: 20px;
+        justify-items: center;
+        justify-content: space-evenly;
+    }
+
+    .townevents h3 {
+        grid-column: span 2;
+    }
+
+    .townevents img {
+        grid-row: span 10;
+    }
+
+    
+    /* footer */
+
+    #contact {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+    }
+    
+
+    /* preston map*/
+
+    #map1 {
+        width: 325px; 
+        height: 285px; 
+    }
+        
+    /* Home Page */
+
+    section.towninfo {
+        padding: 0;
+        display: grid;
+        list-style-type: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2px;
+    }
+
+    /* gallery */
+@media only screen and (min-width: 750px) {
+    .container {
+        margin: 1rem auto;
+        padding: 0
+    }
+
+    #gsix {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    }
+
+    
+    /* hover effect */
+    .container:hover {box-shadow: 0 0 50px #333;}
+}
+    /* end of @media don't type past this */
+}
