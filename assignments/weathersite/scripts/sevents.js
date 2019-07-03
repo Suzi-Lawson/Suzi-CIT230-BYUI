@@ -29,24 +29,27 @@ function populateTowns(jsonObj) {
     var towns = jsonObj;
 
     var myArticle = document.createElement('article');
-    var myH3 = document.createElement('h3');
-    var myPara1 = document.createElement('p');
-    var myImage = document.createElement('img');
-
-    myH3.textContent = "Upcoming Events in " + towns.name;
-    myPara1.textContent = towns.events;
-
-    switch (myH3.textContent) {
-        case "Soda Springs":
-            myImage.src = "images/sodaevents.jpg";
-            break;
-    }
     
+    var myH3 = document.createElement('h3');
+    myH3.textContent = "Upcoming Events in " + towns.name;
     myArticle.appendChild(myH3);
-    myArticle.appendChild(myPara1);
+    
+    var myImage = document.createElement('img');
+    myImage.src = "images/presevents.jpg";
     myArticle.appendChild(myImage);
-    myArticle.className = "townevents";
 
+
+    let myPara = [];
+    var event = 0
+    
+    for (event in towns.events) {
+    myPara[event + 1] = document.createElement('p');
+    myPara[event + 1].textContent = towns.events[event];
+    myArticle.appendChild(myPara[event + 1]);
+    event++;
+}
+
+    myArticle.className = "townevents";
     section.appendChild(myArticle);
 
 }
