@@ -9,16 +9,17 @@ weatherObject.onload = function() {
     document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
     document.getElementById('humidity').innerHTML = weatherInfo.main.humidity;
     document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed;
-}
+
 
 /* wind chill equation */
 
 let temp = weatherInfo.main.temp;
 let speed = weatherInfo.wind.speed;
-document.getElementById('windChill').innerHTML = windChill();
+document.getElementById('windchill').innerHTML = windChill();
 
 function windChill() {
 
     var wind = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(speed,0.16)) + (0.4275 * temp) * Math.pow(speed,0.16);
     return Math.round(wind)
+}
 }
