@@ -18,16 +18,6 @@ function showTowns(jsonObj) {
     town = jsonObj['towns'];
 
     for (townindex = 0; townindex < town.length; townindex++) {
-        if (town[townindex].name == 'Preston')
-        populateTowns(town[townindex]);
-    }
-    
-    for (townindex = 0; townindex < town.length; townindex++) {
-        if (town[townindex].name == 'Soda Springs')
-        populateTowns(town[townindex]);
-    }
-    
-    for (townindex = 0; townindex < town.length; townindex++) {
         if (town[townindex].name == 'Fish Haven')
         populateTowns(town[townindex]);
     }
