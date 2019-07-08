@@ -35,7 +35,7 @@ function populateTowns(jsonObj) {
     myArticle.appendChild(myH3);
     
     var myImage = document.createElement('img');
-    myImage.src = "images/presevents.jpg";
+    myImage.src = "images/sevents.jpg";
     myArticle.appendChild(myImage);
 
 

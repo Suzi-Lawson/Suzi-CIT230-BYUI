@@ -53,13 +53,13 @@ function populateTowns(jsonObj) {
 
     switch (myH2.textContent) {
         case "Preston":
-            myImage.src = "images/preshome.jpg";
+            myImage.src = "images/phome.jpg";
             break;
         case "Soda Springs":
-            myImage.src = "images/sodahome.jpg";
+            myImage.src = "images/shome.jpg";
             break;
         case "Fish Haven":
-            myImage.src = "images/fishhome.jpg";
+            myImage.src = "images/fhome.jpg";
             break;
     }
     
