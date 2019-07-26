@@ -13,7 +13,7 @@ h1, h2, h3, h4 {
     font-family: 'Merienda One', cursive, sans-serif;
 }
 
-p {
+p, li {
     font-family: 'Literata', 'Times New Roman', serif;
     color: #353b3c;
 }
@@ -153,13 +153,14 @@ footer p {
     width: 80%;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0;
 }
-
+@media only screen and (max-width: 600px) {
 .outer li, .inner {
     display: flex;
     flex-direction: column;
 }
-
+}
 .outer > li {
     margin-bottom: 20px;
 }
@@ -196,13 +197,21 @@ footer p {
 
 /* Services */
 
+#serv, #sublinks {
+    margin: 10px;
+    padding: 10px;
+}
+
+#sublinks p {
+    margin-left: 15px;
+}
+
+
 /* Reception */
 
 /* Temple Missionary */
 
 /* Contact Us */
-
-
 
 #mapinfo {
     display: flex;
