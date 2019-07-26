@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <title>Home Page | Temple Inn & Suites</title>
+    <meta name="author" content="Suzi Lawson | CIT 230 BYU-Idaho">
+    <meta name="description" content="Reservation Page for Temple Inn & Suites assignment for Suzi Lawson in CIT 230: Web Front-end Development at Brigham Young University-Idaho">
+    <link href="https://fonts.googleapis.com/css?family=Literata%7CMerienda+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <nav class="topnav" id="myTopnav">
+        <button class="menubtn" onclick="toggleMenu()">&#9776; Menu</button>
+        <div id="primaryNav" class="hide">
+            <a href="index.html">Home</a>
+            <a href="temple.html">Temple</a>
+            <a class="active" href="reservation.html">Reservation</a>
+            <div class="dropdown">
+                <a href="services.html">Services <button class="dropbtn" onclick="toggleDropMenu()"><i class="fa fa-caret-down"></i></button></a>
+                <div class="dropdown-content">
+                    <a href="reception.html">Reception</a>
+                    <a href="missionary.html">Temple Missionary</a>
+                </div>
+            </div>        
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+    <header>
+        <img id="icon" src="images/fortcollinsicon.png" alt="fort collins temple icon">
+        <h1>Temple Inn & Suites</h1>
+    </header>
+    <main>
+        <h2>Reservations</h2>
+<!-- location, date, number and type of rooms, registrant's full name, 
+    email, phone, home state or country, and special accommodations/comments.  -->
+        <form action="thanks.html" id="reserve">
+            <p>
+                <label for="tplace">Location:</label><br>
+                <input list="locations" type="text" class="resform" id="tplace" name="location">
+                <datalist id="locations">
+                    <option value="Fort Collins, Colorado">
+                    <option value="Redlands, California">
+                    <option value="San Diego, California">            
+                    <option value="Laie, Hawaii">
+                </datalist>
+            </p>
+            <p>
+                <label for="adate">Arrival Date:</label><br>
+                <input type="date" class="resform" id="adate" name="arrivaldate">
+            </p>
+            <p>
+                <label for="ddate">Departure Date:</label><br>
+                <input type="date" class="resform" id="ddate" name="departuredate">
+            </p>
+
+            <p>
+                Number and Type of Rooms:<br>
+                <label for="sbed">Single Bed:</label>
+                <input type="number" class="resform" id="sbed" name="singlequantity" min="0" max="20"><br>
+                <label for="dbed">Double Beds:</label>
+                <input type="number" class="resform" id="dbed" name="doublequantity" min="0" max="20"><br>
+                <label for="kbed">King Bed:</label>
+                <input type="number" class="resform" id="kbed" name="kingquantity" min="0" max="20"><br>
+            </p>
+            
+            <p>
+                <label for="name">Full Name:</label><br>
+                <input type="text" class="resform" id="name" name="fullname" placeholder="John Doe" pattern="[A-z\s]{5,}" required>
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="text" class="resform" id="email" name="email" placeholder="example@email.com">
+            </p>
+            <p>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" class="resform" id="phone" name="phonenumber" placeholder="999-999-9999" pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$" required>
+            </p>
+            <p>
+                <label for="home">Home State or Country:</label><br>
+                <input type="text" class="resform" id="home" name="homeplace">
+            </p>
+            <p>
+                <label for="addcom">Special Accomodations or Comments:</label><br>
+                <textarea class="resform" id="addcom" name="addcom" maxlength="200" rows="5"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+    </main>
+    <footer>
+        <p>© 2019 - Suzi Lawson | <a href="http://byui.edu/">BYU-Idaho</a> | Temple Inn & Suites | <span id="today">current date</span></p>
+    </footer>
+<!-- JavaScripts used on this page -->
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+</html>

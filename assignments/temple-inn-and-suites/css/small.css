@@ -1,0 +1,178 @@
+/** basic site design **/
+
+body {
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Merienda One', cursive, sans-serif;
+}
+
+p {
+    font-family: 'Literata', 'Times New Roman', serif;
+    color: #353b3c;
+}
+
+/* Primary color will be #6a8484
+My Secondary color will be #8ba375
+Navigation will be #353b3c
+Will also include #eef0f2, #c6c7c4, #000000
+ */
+
+/* navigation */
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #eef0f2;
+    font-family: 'Literata', 'Times New Roman', serif;
+    font-size: 1rem;
+}
+
+button.menubtn {
+    margin: .2rem 2%;
+    font-size: 1.6rem;
+    color: #eef0f2;
+}
+
+nav {
+    font-family: 'Literata', 'Times New Roman', serif;
+    background-color: #6a8484;
+    color: #eef0f2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #eef0f2;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #8ba375;
+    color: #c6c7c4;
+}
+
+.active {
+    background-color: #353b3c;
+    color: #eef0f2;
+}
+
+.hide {
+    display: none;
+}
+
+/* drop down for services */
+
+.dropbtn {
+    color: #c6c7c4;
+    border: none;
+}
+ 
+.dropdown {
+    position: relative;
+}
+ 
+.dropdown-content {
+    background-color: #6a8484;
+    color: #eef0f2;
+    display: none;
+    position: left;
+    z-index: 1;
+}
+ 
+.dropdown-content a {
+    display: block;
+}
+ 
+.dropdown-content a:hover {
+    background-color:#8ba375;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover {
+    background-color: #8ba375;
+}
+
+/* header */
+
+h1 {
+    margin: 0px;
+    padding: 10px;
+    background-color: #8ba375;
+    padding-left: 15px;
+    color: #eef0f2;
+}
+
+#icon {
+    float: left;
+    padding: 10px;
+}
+
+/* body */
+
+h2 {
+    margin-top: 65px;
+    margin-left: 15px;
+    color: #353b3c
+}
+
+/* footer */
+
+footer p {
+    background-color: #6a8484;
+    color: #eef0f2;
+    max-width: 1200px;
+    align-content: center;
+    text-align: center;
+    margin: 0;
+    padding: .2em;
+}
+
+/* Temple */
+
+/* Reservation */
+
+/* Services */
+
+/* Reception */
+
+/* Temple Missionary */
+
+/* Contact Us */
+
+#contactform, #reserve {
+    background-color: #eef0f2;
+    border: solid;
+    border-color: #6a8484;    
+    padding: 15px;
+    margin: 10px;
+    padding-left: 30px;
+}
+
+
+
+#mapinfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 10px;
+}
+
+#binfo, iframe {
+    padding: 10px
+}

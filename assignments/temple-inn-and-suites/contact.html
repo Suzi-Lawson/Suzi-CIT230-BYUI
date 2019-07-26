@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <title>Home Page | Temple Inn & Suites</title>
+    <meta name="author" content="Suzi Lawson | CIT 230 BYU-Idaho">
+    <meta name="description" content="Home Page for Temple Inn & Suites assignment for Suzi Lawson in CIT 230: Web Front-end Development at Brigham Young University-Idaho">
+    <link href="https://fonts.googleapis.com/css?family=Literata%7CMerienda+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <nav class="topnav" id="myTopnav">
+        <button class="menubtn" onclick="toggleMenu()">&#9776; Menu</button>
+        <div id="primaryNav" class="hide">
+            <a href="index.html">Home</a>
+            <a href="temple.html">Temple</a>
+            <a href="reservation.html">Reservation</a>
+            <div class="dropdown">
+                <a href="services.html">Services <button class="dropbtn" onclick="toggleDropMenu()"><i class="fa fa-caret-down"></i></button></a>
+                <div class="dropdown-content">
+                    <a href="reception.html">Reception</a>
+                    <a href="missionary.html">Temple Missionary</a>
+                </div>
+            </div>        
+            <a class="active" href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+    <header>
+        <img id="icon" src="images/fortcollinsicon.png" alt="fort collins temple icon">
+        <h1>Temple Inn & Suites</h1>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <form action="contact.html" id="contactform">
+<!-- form for contacting company -->
+<!-- collect full name -->
+            <p>
+                <label for="name">NAME:</label><br>
+                <input type="text" class="contform" id="name" name="fullname" placeholder="John Doe" pattern="[A-z\s]{5,}" required>
+            </p>
+<!-- collect email -->
+            <p>
+                <label for="email">EMAIL:</label><br>
+                <input type="text" class="contform" id="email" name="email" placeholder="example@email.com">
+            </p>
+<!-- Subject -->
+            <p>
+                <label for="subj">Subject:</label><br>
+                <textarea class="contform" id="subj" name="subject" maxlength="50" rows="1" placeholder="Subject"></textarea> 
+            </p>
+<!-- Message -->
+            <p>
+                <label for="mess">Message:</label><br>
+                <textarea class="contform" id="mess" name="message" maxlength="500" rows="10" placeholder="Message"></textarea> 
+            </p>
+<!-- submit button -->
+            <p>
+                <input type="submit" value="SEND EMAIL">
+            </p>
+        </form>
+        <div id="mapinfo">
+            <div id="binfo">
+                <p>Temple Inn & Suites</p>
+                <p>Email: contactus@templeinnandsuites.com</p>
+                <p>Phone: 1-800-T-SUITES</p>
+                <P>Address: 4800 Montgomery Ln #300<br> Bethesda, MD 20814</P>
+            </div>
+            <iframe id="bmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5888.627551698569!2d-77.099037778046!3d38.982786927217276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1564046742093!5m2!1sen!2sus" 
+                width="340" height="255" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>© 2019 - Suzi Lawson | <a href="http://byui.edu/">BYU-Idaho</a> | Temple Inn & Suites | <span id="today">current date</span></p>
+    </footer>
+<!-- JavaScripts used on this page -->
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <title>Home Page | Temple Inn & Suites</title>
+    <meta name="author" content="Suzi Lawson | CIT 230 BYU-Idaho">
+    <meta name="description" content="Reception Page for Temple Inn & Suites assignment for Suzi Lawson in CIT 230: Web Front-end Development at Brigham Young University-Idaho">
+    <link href="https://fonts.googleapis.com/css?family=Literata%7CMerienda+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <nav class="topnav" id="myTopnav">
+        <button class="menubtn" onclick="toggleMenu()">&#9776; Menu</button>
+        <div id="primaryNav" class="hide">
+            <a href="index.html">Home</a>
+            <a href="temple.html">Temple</a>
+            <a href="reservation.html">Reservation</a>
+            <div class="dropdown">
+                <a class="active" href="services.html">Services <button class="dropbtn" onclick="toggleDropMenu()"><i class="fa fa-caret-down"></i></button></a>
+                <div class="dropdown-content">
+                    <a href="reception.html">Reception</a>
+                    <a href="missionary.html">Temple Missionary</a>
+                </div>
+            </div>        
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+    <header>
+        <img id="icon" src="images/fortcollinsicon.png" alt="fort collins temple icon">    
+        <h1>Temple Inn & Suites</h1>
+    </header>
+    <main>
+        <h2>Reception</h2>
+
+    </main>
+    <footer>
+        <p>© 2019 - Suzi Lawson | <a href="http://byui.edu/">BYU-Idaho</a> | Temple Inn & Suites | <span id="today">current date</span></p>
+    </footer>
+<!-- JavaScripts used on this page -->
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+</html>
