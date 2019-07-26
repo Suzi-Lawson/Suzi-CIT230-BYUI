@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
+    <div class="bcolor">
     <nav class="topnav" id="myTopnav">
         <button class="menubtn" onclick="toggleMenu()">&#9776; Menu</button>
         <div id="primaryNav" class="hide">
@@ -37,29 +38,31 @@
         <form action="contact.html" id="contactform">
 <!-- form for contacting company -->
 <!-- collect full name -->
-            <p>
-                <label for="name">NAME:</label><br>
-                <input type="text" class="contform" id="name" name="fullname" placeholder="John Doe" pattern="[A-z\s]{5,}" required>
-            </p>
+            <ul class="outer">
+                <li>
+                    <label for="name">NAME:</label>
+                    <input type="text" class="contform" id="name" name="fullname" placeholder="John Doe" pattern="[A-z\s]{5,}" required>
+                </li>
 <!-- collect email -->
-            <p>
-                <label for="email">EMAIL:</label><br>
-                <input type="text" class="contform" id="email" name="email" placeholder="example@email.com">
-            </p>
+                <li>
+                    <label for="email">EMAIL:</label>
+                    <input type="text" class="contform" id="email" name="email" placeholder="example@email.com">
+                </li>
 <!-- Subject -->
-            <p>
-                <label for="subj">Subject:</label><br>
-                <textarea class="contform" id="subj" name="subject" maxlength="50" rows="1" placeholder="Subject"></textarea> 
-            </p>
+                <li>
+                    <label for="subj">Subject:</label>
+                    <textarea class="contform" id="subj" name="subject" maxlength="50" rows="1" placeholder="Subject"></textarea> 
+                </li>
 <!-- Message -->
-            <p>
-                <label for="mess">Message:</label><br>
-                <textarea class="contform" id="mess" name="message" maxlength="500" rows="10" placeholder="Message"></textarea> 
-            </p>
+                <li>
+                    <label for="mess">Message:</label>
+                    <textarea class="contform" id="mess" name="message" maxlength="500" rows="10" placeholder="Message"></textarea> 
+                </li>
 <!-- submit button -->
-            <p>
-                <input type="submit" value="SEND EMAIL">
-            </p>
+                <li>
+                    <button type="submit">send email</button>
+                </li>
+            </ul>
         </form>
         <div id="mapinfo">
             <div id="binfo">
@@ -78,5 +81,6 @@
 <!-- JavaScripts used on this page -->
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    </div>
 </body>
 </html>

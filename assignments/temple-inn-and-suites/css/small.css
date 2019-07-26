@@ -3,7 +3,10 @@
 body {
     max-width: 1200px;
     margin: auto;
+}
 
+.bcolor {
+    background-color: #eef0f2;
 }
 
 h1, h2, h3, h4 {
@@ -139,12 +142,57 @@ footer p {
     align-content: center;
     text-align: center;
     margin: 0;
-    padding: .2em;
+    padding: 5px;
 }
 
 /* Temple */
 
-/* Reservation */
+/* Reservation & contact forms */
+
+.outer {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.outer li, .inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.outer > li {
+    margin-bottom: 20px;
+}
+
+.outer li label, .outer li p {
+    padding: 8px;
+    letter-spacing: .09em;
+    color: #353b3c;
+    text-transform: uppercase;
+}
+
+.outer li p {
+    margin: 0;
+}
+
+.outer li input, .outer li textarea {
+    padding: 15px;
+    border: none;
+}
+
+.outer li button{
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    color: #353b3c;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+}
+
+.inner li {
+    width: 240px;
+}
 
 /* Services */
 
@@ -153,15 +201,6 @@ footer p {
 /* Temple Missionary */
 
 /* Contact Us */
-
-#contactform, #reserve {
-    background-color: #eef0f2;
-    border: solid;
-    border-color: #6a8484;    
-    padding: 15px;
-    margin: 10px;
-    padding-left: 30px;
-}
 
 
 
