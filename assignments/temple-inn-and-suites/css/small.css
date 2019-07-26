@@ -195,6 +195,12 @@ footer p {
     width: 240px;
 }
 
+/* Thank you page */
+
+#thanks {
+    margin: 30px;
+}
+
 /* Services */
 
 #serv, #sublinks {
