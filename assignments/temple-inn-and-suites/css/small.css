@@ -170,7 +170,7 @@ footer p {
 
 }
 
-#hinfo {
+#hinfo, {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 10px;
@@ -195,6 +195,26 @@ article, #abus, #suites, #recep {
 
 /* Temple */
 
+#fpic, #spic, #lpic, #rpic {
+    width: 340px
+}
+
+#ftemp, #stemp, #ltemp, #rtemp {
+    margin: 10px;
+    margin-bottom: 15px;
+    border: solid;
+    border-color: #6a8484;
+    padding: 10px;
+    min-width: 260px;
+    max-width: 340px;
+}
+
+.templeinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 /* Reservation & contact forms */
 
 .outer {
@@ -207,7 +227,7 @@ article, #abus, #suites, #recep {
 
 /* start at max-width @media */
 @media only screen and (max-width: 600px) {
-.outer li, .inner {
+.outer li, .inner, {
     display: flex;
     flex-direction: column;
 }
