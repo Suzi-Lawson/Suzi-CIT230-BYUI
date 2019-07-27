@@ -170,7 +170,7 @@ footer p {
 
 }
 
-#hinfo, {
+#hinfo {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 10px;
@@ -227,7 +227,7 @@ article, #abus, #suites, #recep {
 
 /* start at max-width @media */
 @media only screen and (max-width: 600px) {
-.outer li, .inner, {
+.outer li, .inner {
     display: flex;
     flex-direction: column;
 }
