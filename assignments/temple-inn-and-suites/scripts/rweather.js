@@ -1,7 +1,7 @@
 /* redlands */
 const weatherrObject = new XMLHttpRequest();
 
-weatherObject.open("GET", "//api.openweathermap.org/data/2.5/weather?zip=92374,us&appid=b4f53c29c600d4a6c578dd81d9f2a254&units=imperial", true);
+weatherrObject.open("GET", "//api.openweathermap.org/data/2.5/weather?zip=92374,us&appid=b4f53c29c600d4a6c578dd81d9f2a254&units=imperial", true);
 
 
 weatherrObject.send();
