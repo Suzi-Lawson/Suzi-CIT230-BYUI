@@ -125,6 +125,12 @@ h1 {
     padding: 10px;
 }
 
+/* group head photo */
+
+#tact {
+    width: 100%;
+}
+
 /* body */
 
 h2 {
@@ -143,6 +149,53 @@ footer p {
     text-align: center;
     margin: 0;
     padding: 5px;
+}
+
+/* Home Page */
+
+#callta {
+    margin-top: -40px;
+    margin-left: 20px;
+    padding: 8px 16px;
+    border: 2px solid #8ba375;
+    background-color: #8ba375;
+    color: #353b3c;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 5px;
+
+}
+
+#hinfo {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Temple summary on home */
+article {
+    margin: 10px;
+    margin-bottom: 15px;
+    border: solid;
+    border-color: #6a8484;
+    padding: 10px;
+    min-width: 260px;
+}
+
+#ttemp {
+    padding: 10px;
+    float: left;
+    width: 240px;
+
+}
+
+/* About us summary */
+#abus {
+    margin: 10px;
+    margin-bottom: 15px;
+    border: solid;
+    border-color: #6a8484;
+    padding: 10px;
+    min-width: 260px;
 }
 
 /* Temple */

@@ -7,6 +7,12 @@ nav {
 }
 
 
+/* home page changes */
+
+#hinfo {
+    grid-template-columns: 1fr 1fr;
+}
+
 /* reservation form room section */
 .inner li {
     width: 180px;
