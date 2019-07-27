@@ -1,5 +1,6 @@
 const weatherObject = new XMLHttpRequest();
 
+
 weatherObject.open("GET", "//api.openweathermap.org/data/2.5/weather?zip=80528,us&appid=b4f53c29c600d4a6c578dd81d9f2a254&units=imperial", true);
 
 
@@ -28,8 +29,6 @@ function fwindChill() {
 }
 
 
-const weatherObject = new XMLHttpRequest();
-
 weatherObject.open("GET", "//api.openweathermap.org/data/2.5/weather?zip=92122,us&appid=b4f53c29c600d4a6c578dd81d9f2a254&units=imperial", true);
 
 
@@ -57,7 +56,7 @@ function swindChill() {
 }
 }
 /* hawaii */ 
-const weatherObject = new XMLHttpRequest();
+
 
 weatherObject.open("GET", "//api.openweathermap.org/data/2.5/weather?zip=96762,us&appid=b4f53c29c600d4a6c578dd81d9f2a254&units=imperial", true);
 
@@ -87,7 +86,7 @@ function hwindChill() {
 }
 
 /* redlands */
-const weatherObject = new XMLHttpRequest();
+
 
 weatherObject.open("GET", "//api.openweathermap.org/data/2.5/weather?zip=92374,us&appid=b4f53c29c600d4a6c578dd81d9f2a254&units=imperial", true);
 
