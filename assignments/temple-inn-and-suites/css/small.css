@@ -155,11 +155,17 @@ footer p {
     margin: 0 auto;
     padding: 0;
 }
+
+
+/* start at max-width @media */
 @media only screen and (max-width: 600px) {
 .outer li, .inner {
     display: flex;
     flex-direction: column;
 }
+/* end of max-width @media */
+
+
 }
 .outer > li {
     margin-bottom: 20px;
