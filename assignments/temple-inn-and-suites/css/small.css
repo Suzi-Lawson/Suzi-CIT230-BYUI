@@ -139,6 +139,10 @@ h2 {
     color: #353b3c
 }
 
+h3 {
+    color: #353b3c;
+}
+
 /* footer */
 
 footer p {
@@ -154,21 +158,22 @@ footer p {
 /* Home Page */
 
 #callta {
-    margin-top: -40px;
-    margin-left: 20px;
+    margin: 20px;
     padding: 8px 16px;
     border: 2px solid #8ba375;
     background-color: #8ba375;
-    color: #353b3c;
+    color: #eef0f2;
     text-transform: uppercase;
     letter-spacing: .09em;
     border-radius: 5px;
+    text-decoration: none;
 
 }
 
 #hinfo {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 10px;
 }
 
 /* Temple summary on home */
