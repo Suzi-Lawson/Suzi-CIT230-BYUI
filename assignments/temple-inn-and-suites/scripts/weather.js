@@ -37,19 +37,19 @@ weathersObject.open("GET", "//api.openweathermap.org/data/2.5/weather?zip=92122,
 
 weathersObject.send();
 weathersObject.onload = function() {
-    let weatherInfo = JSON.parse(weathersObject.responseText);
-    console.log(weatherInfo);
+    let weathersInfo = JSON.parse(weathersObject.responseText);
+    console.log(weathersInfo);
 
-    document.getElementById('sweatherDescr').innerHTML = weatherInfo.weather[0].description;
-    document.getElementById('scurrentTemp').innerHTML = weatherInfo.main.temp;
-    document.getElementById('shumidity').innerHTML = weatherInfo.main.humidity;
-    document.getElementById('swindSpeed').innerHTML = weatherInfo.wind.speed;
+    document.getElementById('sweatherDescr').innerHTML = weathersInfo.weather[0].description;
+    document.getElementById('scurrentTemp').innerHTML = weathersInfo.main.temp;
+    document.getElementById('shumidity').innerHTML = weathersInfo.main.humidity;
+    document.getElementById('swindSpeed').innerHTML = weathersInfo.wind.speed;
 
 
 /* wind chill equation */
 
-let temp = weatherInfo.main.temp;
-let speed = weatherInfo.wind.speed;
+let temp = weathersInfo.main.temp;
+let speed = weathersInfo.wind.speed;
 document.getElementById('swindchill').innerHTML = swindChill();
 
 function swindChill() {
@@ -67,18 +67,18 @@ weatherhObject.open("GET", "//api.openweathermap.org/data/2.5/weather?zip=96762,
 weatherhObject.send();
 weatherhObject.onload = function() {
     let weatherInfo = JSON.parse(weatherhObject.responseText);
-    console.log(weatherInfo);
+    console.log(weatherhInfo);
 
-    document.getElementById('hweatherDescr').innerHTML = weatherInfo.weather[0].description;
-    document.getElementById('hcurrentTemp').innerHTML = weatherInfo.main.temp;
-    document.getElementById('hhumidity').innerHTML = weatherInfo.main.humidity;
-    document.getElementById('hwindSpeed').innerHTML = weatherInfo.wind.speed;
+    document.getElementById('hweatherDescr').innerHTML = weatherhInfo.weather[0].description;
+    document.getElementById('hcurrentTemp').innerHTML = weatherhInfo.main.temp;
+    document.getElementById('hhumidity').innerHTML = weatherhInfo.main.humidity;
+    document.getElementById('hwindSpeed').innerHTML = weatherhInfo.wind.speed;
 
 
 /* wind chill equation */
 
-let temp = weatherInfo.main.temp;
-let speed = weatherInfo.wind.speed;
+let temp = weatherhInfo.main.temp;
+let speed = weatherhInfo.wind.speed;
 document.getElementById('hwindchill').innerHTML = hwindChill();
 
 function hwindChill() {
@@ -97,18 +97,18 @@ weatherObject.open("GET", "//api.openweathermap.org/data/2.5/weather?zip=92374,u
 weatherrObject.send();
 weatherrObject.onload = function() {
     let weatherInfo = JSON.parse(weatherrObject.responseText);
-    console.log(weatherInfo);
+    console.log(weatherrInfo);
 
-    document.getElementById('rweatherDescr').innerHTML = weatherInfo.weather[0].description;
-    document.getElementById('rcurrentTemp').innerHTML = weatherInfo.main.temp;
-    document.getElementById('rhumidity').innerHTML = weatherInfo.main.humidity;
-    document.getElementById('rwindSpeed').innerHTML = weatherInfo.wind.speed;
+    document.getElementById('rweatherDescr').innerHTML = weatherrInfo.weather[0].description;
+    document.getElementById('rcurrentTemp').innerHTML = weatherrInfo.main.temp;
+    document.getElementById('rhumidity').innerHTML = weatherrInfo.main.humidity;
+    document.getElementById('rwindSpeed').innerHTML = weatherrInfo.wind.speed;
 
 
 /* wind chill equation */
 
-let temp = weatherInfo.main.temp;
-let speed = weatherInfo.wind.speed;
+let temp = weatherrInfo.main.temp;
+let speed = weatherrInfo.wind.speed;
 document.getElementById('rwindchill').innerHTML = rwindChill();
 
 function rwindChill() {
