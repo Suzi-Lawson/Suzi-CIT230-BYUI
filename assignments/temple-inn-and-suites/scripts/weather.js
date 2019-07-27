@@ -30,14 +30,14 @@ function fwindChill() {
 };
 
 
-const weatherObject = new XMLHttpRequest();
+const weathersObject = new XMLHttpRequest();
 
-weatherObject.open("GET", "//api.openweathermap.org/data/2.5/weather?zip=92122,us&appid=b4f53c29c600d4a6c578dd81d9f2a254&units=imperial", true);
+weathersObject.open("GET", "//api.openweathermap.org/data/2.5/weather?zip=92122,us&appid=b4f53c29c600d4a6c578dd81d9f2a254&units=imperial", true);
 
 
-weatherObject.send();
-weatherObject.onload = function() {
-    let weatherInfo = JSON.parse(weatherObject.responseText);
+weathersObject.send();
+weathersObject.onload = function() {
+    let weatherInfo = JSON.parse(weathersObject.responseText);
     console.log(weatherInfo);
 
     document.getElementById('sweatherDescr').innerHTML = weatherInfo.weather[0].description;
@@ -59,14 +59,14 @@ function swindChill() {
 }
 };
 /* hawaii */ 
-const weatherObject = new XMLHttpRequest();
+const weatherhObject = new XMLHttpRequest();
 
-weatherObject.open("GET", "//api.openweathermap.org/data/2.5/weather?zip=96762,us&appid=b4f53c29c600d4a6c578dd81d9f2a254&units=imperial", true);
+weatherhObject.open("GET", "//api.openweathermap.org/data/2.5/weather?zip=96762,us&appid=b4f53c29c600d4a6c578dd81d9f2a254&units=imperial", true);
 
 
-weatherObject.send();
-weatherObject.onload = function() {
-    let weatherInfo = JSON.parse(weatherObject.responseText);
+weatherhObject.send();
+weatherhObject.onload = function() {
+    let weatherInfo = JSON.parse(weatherhObject.responseText);
     console.log(weatherInfo);
 
     document.getElementById('hweatherDescr').innerHTML = weatherInfo.weather[0].description;
@@ -89,14 +89,14 @@ function hwindChill() {
 };
 
 /* redlands */
-const weatherObject = new XMLHttpRequest();
+const weatherrObject = new XMLHttpRequest();
 
 weatherObject.open("GET", "//api.openweathermap.org/data/2.5/weather?zip=92374,us&appid=b4f53c29c600d4a6c578dd81d9f2a254&units=imperial", true);
 
 
-weatherObject.send();
-weatherObject.onload = function() {
-    let weatherInfo = JSON.parse(weatherObject.responseText);
+weatherrObject.send();
+weatherrObject.onload = function() {
+    let weatherInfo = JSON.parse(weatherrObject.responseText);
     console.log(weatherInfo);
 
     document.getElementById('rweatherDescr').innerHTML = weatherInfo.weather[0].description;
