@@ -177,7 +177,7 @@ footer p {
 }
 
 /* Temple summary on home */
-article {
+article, #abus, #suites {
     margin: 10px;
     margin-bottom: 15px;
     border: solid;
@@ -191,16 +191,6 @@ article {
     float: left;
     width: 240px;
 
-}
-
-/* About us summary */
-#abus {
-    margin: 10px;
-    margin-bottom: 15px;
-    border: solid;
-    border-color: #6a8484;
-    padding: 10px;
-    min-width: 260px;
 }
 
 /* Temple */
@@ -268,7 +258,7 @@ article {
 /* Services */
 
 #serv, #sublinks {
-    margin: 10px;
+    float: left
     padding: 10px;
 }
 
@@ -280,6 +270,17 @@ article {
 /* Reception */
 
 /* Temple Missionary */
+
+#kitch {
+    float:right;
+    padding: 10px;
+}
+
+h4 {
+    margin: 20px;
+    color: #353b3c;
+}
+
 
 /* Contact Us */
 
@@ -294,3 +295,7 @@ article {
 #binfo, iframe {
     padding: 10px
 }
+
+.clearfix {
+    overflow: auto;
+  }

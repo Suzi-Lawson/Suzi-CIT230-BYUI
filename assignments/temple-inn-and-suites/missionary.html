@@ -7,6 +7,7 @@
     <meta name="author" content="Suzi Lawson | CIT 230 BYU-Idaho">
     <meta name="description" content="Home Page for Temple Inn & Suites assignment for Suzi Lawson in CIT 230: Web Front-end Development at Brigham Young University-Idaho">
     <link href="https://fonts.googleapis.com/css?family=Literata%7CMerienda+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -35,13 +36,41 @@
         <h1>Temple Inn & Suites</h1>
     </header>
     <main>
-        <h2>Full Time Temple Missionary</h2>
-        <img id="miss" src="images/missionaries.jpg" alt="older and younger missionaries by temple">
-        <div>
-            <p>
-                Our 
-            </p>
+        <h2>Full Time Temple Missionary</h2>        
+<!-- page that provides information and images about the suites offered at the hotel with a simple Contact Us form for more details. -->
+        <div id="suites" class="clearfix">
+            <h3>Let us help you</h3>        
+                <p><img id="kitch" src="images/kitchenette.jpg" alt="simple kitchenette">We pride ourselves in offering kitchenette suites with full accommodations. We have single and double rooms with working fridge and stove.
+                Our suites include a living area for full relaxation and study. Dishwasher and microwave provided for quick cooking and cleaning, 
+                because we know how busy missionary life can be. Washer and dryer in every suite to allow you to keep yourself clean in representation 
+                of the lord.</p>
         </div>
+        
+        <form action="missionary.html" id="contactform">
+<!-- form for getting more information -->
+            <h4>If you would like more information please fill out the following:</h4>
+<!-- collect full name -->
+            <ul class="outer">                            
+                <li>
+                    <label for="name">NAME:</label>
+                    <input type="text" class="contform" id="name" name="fullname" placeholder="John Doe" pattern="[A-z\s]{5,}" required>
+                </li>
+<!-- collect phone number -->                
+                <li>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" class="resform" id="phone" name="phonenumber" placeholder="999-999-9999" pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$" required>
+                </li>
+<!-- collect email -->
+                <li>
+                    <label for="email">EMAIL:</label>
+                    <input type="text" class="contform" id="email" name="email" placeholder="example@email.com">
+                </li>
+<!-- submit button -->
+                <li>
+                    <button type="submit">send email</button>
+                </li>
+            </ul>
+        </form>
 
     </main>
     <footer>
