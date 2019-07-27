@@ -177,7 +177,7 @@ footer p {
 }
 
 /* Temple summary on home */
-article, #abus, #suites {
+article, #abus, #suites, #recep {
     margin: 10px;
     margin-bottom: 15px;
     border: solid;
@@ -270,7 +270,7 @@ article, #abus, #suites {
 
 /* Temple Missionary */
 
-#kitch {
+#kitch, #hall {
     float:right;
     padding: 10px;
 }
