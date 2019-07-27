@@ -6,7 +6,7 @@ weatherrObject.open("GET", "//api.openweathermap.org/data/2.5/weather?zip=92374,
 
 weatherrObject.send();
 weatherrObject.onload = function() {
-    let weatherInfo = JSON.parse(weatherrObject.responseText);
+    let weatherrInfo = JSON.parse(weatherrObject.responseText);
     console.log(weatherrInfo);
 
     document.getElementById('rweatherDescr').innerHTML = weatherrInfo.weather[0].description;
