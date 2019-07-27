@@ -258,7 +258,7 @@ article, #abus, #suites {
 /* Services */
 
 #serv, #sublinks {
-    float: left
+    float: left;
     padding: 10px;
 }
 
